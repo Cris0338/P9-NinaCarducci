@@ -32,7 +32,7 @@
     /></noscript>
 
     <meta charset="UTF-8" />
-	<title>Nina Carducci - Photographe</title>
+    <title>Nina Carducci - Photographe</title>
     <script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
     <script
       async
@@ -42,6 +42,44 @@
     ></script>
     <script defer src="./assets/maugallery.js"></script>
     <script defer src="./assets/scripts.js"></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Nina Carducci",
+        "image": "./assets/images/url_img.webp",
+        "@id": "",
+        "url": "https://ninacarducci.github.io/",
+        "telephone": "+33 5 56 67 78 89",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "postalCode": "33200",
+          "addressCountry": "FR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 44.8465743,
+          "longitude": -0.6065364999999999
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "10:00",
+          "closes": "19:00"
+        },
+        "sameAs": "https://www.instagram.com/ninacarducci.photo/?hl=fr" 
+      }
+      </script>
+
   </head>
   <body>
     <div class="top-header">
@@ -53,10 +91,16 @@
           <li><a href="#services">Service</a></li>
           <li><a href="#contact">Contact</a></li>
           <li>
-            <a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank">
-				<img src="assets/images/instagram.png" alt="Nina Carducci sur Instagram">
-			  </a>
-			  
+            <a
+              class="social-link"
+              href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
+              target="_blank"
+            >
+              <img
+                src="assets/images/instagram.png"
+                alt="Nina Carducci sur Instagram"
+              />
+            </a>
           </li>
         </ul>
       </div>
@@ -134,7 +178,10 @@
     </div>
     <div id="about">
       <div class="picture left">
-        <img src="./assets/images/nina.webp" alt="Girl with denim overalls and striped t-shirt"/>
+        <img
+          src="./assets/images/nina.webp"
+          alt="Girl with denim overalls and striped t-shirt"
+        />
       </div>
       <div id="about-me">
         <h3 class="about-me__title">A propos de moi</h3>
@@ -163,55 +210,55 @@
             data-gallery-tag="Concert"
             class="gallery-item"
             src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
-			alt="Concert lights"
+            alt="Concert lights"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
-			alt="Manager in front"
+            alt="Manager in front"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
-			alt="Happy people"
+            alt="Happy people"
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
             src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
-			alt="Hands that take each other"
+            alt="Hands that take each other"
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
             src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
-			alt="Man dreaming"
+            alt="Man dreaming"
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
             src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
-			alt="Newlyweds laughing"
+            alt="Newlyweds laughing"
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
             src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"
-			alt="Woman with glasses"
+            alt="Woman with glasses"
           />
           <img
             data-gallery-tag="Concert"
             class="gallery-item"
             src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
-			alt="Singer at concert"
+            alt="Singer at concert"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
-			alt="Woman laughing at work"
+            alt="Woman laughing at work"
           />
         </div>
       </div>
@@ -309,7 +356,7 @@
           </form>
         </div>
         <div class="picture right">
-          <img src="./assets/images/camera.webp" alt="Camera"/>
+          <img src="./assets/images/camera.webp" alt="Camera" />
         </div>
       </div>
     </div>
