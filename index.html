@@ -8,7 +8,7 @@
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
-      <link
+    <link
       rel="preload"
       as="image"
       href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
@@ -22,13 +22,13 @@
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
-   
+
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/webp" href="./assets/images/favicon.webp">
+    <link rel="icon" type="image/webp" href="./assets/images/favicon.webp" />
     <title>Nina Carducci - Photographe</title>
     <meta
       name="description"
-      content="Découvrez le monde à travers l'objectif de Nina Carducci, photographe professionnelle spécialisée dans les séances photo, les portraits et les événements. Explorez la galerie en ligne et réservez votre service personnalisé pour immortaliser vos précieux moments."
+      content="Explorez le monde de Nina Carducci, photographe spécialisée: séances, portraits, événements. Parcourez sa galerie et réservez votre service unique."
     />
 
     <script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
@@ -40,6 +40,7 @@
     <script defer src="./assets/maugallery.js"></script>
     <script defer src="./assets/scripts.js"></script>
 
+    <!-- Données pour le schema.org -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -68,10 +69,39 @@
           "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
           "opens": "10:00:00+01:00",
           "closes": "19:00:00+01:00"
-        },        
+        },
         "sameAs": "https://www.instagram.com/ninacarducci.photo/?hl=fr"
       }
     </script>
+
+    <!-- Balises méta OpenGraph pour Facebook, LinkedIn, etc. -->
+    <meta property="og:title" content="Nina Carducci Photographe" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ninacarducci.github.io/" />
+    <meta
+      property="og:image"
+      content="https://ninacarducci.github.io/assets/images/url_img.webp"
+    />
+    <meta
+      property="og:description"
+      content="Découvrez le monde à travers l'objectif de Nina Carducci, photographe professionnelle spécialisée dans les portraits et les événements."
+    />
+    <meta property="og:site_name" content="Nina Carducci Photographe" />
+
+    <!-- Balises méta pour Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@NinaCarducciPhoto" />
+    <meta name="twitter:title" content="Nina Carducci Photographie" />
+    <meta
+      name="twitter:description"
+      content="Découvrez le monde à travers l'objectif de Nina Carducci, photographe professionnelle spécialisée dans les portraits et les événements."
+    />
+    <meta
+      name="twitter:image"
+      content="https://ninacarducci.github.io/assets/images/url_img.webp"
+    />
+
+    <!-- Autres balises méta pertinentes pour votre site -->
   </head>
   <body>
     <div class="top-header">
@@ -257,12 +287,12 @@
       <div class="quote">
         <figure>
           <blockquote>
-            <p class="quote__text">
+            <h3 class="quote__text">
               Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
               qu’un fait est traduit en photo, il cesse d’être un fait pour
               devenir une opinion. L’inexactitude n’existe pas en photographie.
               Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
-            </p>
+            </h3>
           </blockquote>
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
@@ -352,5 +382,19 @@
         </div>
       </div>
     </div>
+    <footer>
+      <div class="footer" itemscope itemtype="http://schema.org/LocalBusiness">
+        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <h3 itemprop="name">Nina Carducci Photography</h3>
+          <span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>,
+          <span itemprop="addressLocality">Bordeaux</span>,
+          <span itemprop="postalCode">33200</span>,
+          <span itemprop="addressRegion">Nouvelle-Aquitaine</span>,
+          <span itemprop="addressCountry">FR</span>
+          <p>Téléphone: <span itemprop="telephone">+33 5 56 67 78 89</span></p>
+        </div>
+      </div>
+    </footer>
+    
   </body>
 </html>
