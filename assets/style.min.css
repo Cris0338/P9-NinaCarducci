@@ -122,6 +122,8 @@ body {
 }
 .gallery .nav {
   justify-content: center;
+  cursor: default;
+  
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
